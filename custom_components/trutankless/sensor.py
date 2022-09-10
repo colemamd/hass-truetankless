@@ -45,8 +45,6 @@ async def async_setup_entry(
     coordinator: DataUpdateCoordinator = data[COORDINATOR]
     device_data: dict = coordinator.data
 
-    _LOGGER.warning("sensor.py device_data: %s:", device_data)
-
     entities: list[TruTanklessSensor] = []
     for description in SENSORS:
         entities.append(TruTanklessSensor(coordinator, description, device_data))
