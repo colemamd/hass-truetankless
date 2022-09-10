@@ -10,6 +10,6 @@
   "homekit": {},
   "dependencies": [],
   "codeowners": ["@colemamd"],
-  "iot_class": "cloud_poll",
+  "iot_class": "cloud_polling",
   "version": "0.1.0"
 }
