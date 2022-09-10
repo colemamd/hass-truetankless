@@ -5,6 +5,7 @@ from homeassistant.components.sensor import (
     SensorStateClass,
 )
 from homeassistant.const import ATTR_VOLTAGE, TEMP_CELSIUS, VOLUME_GALLONS, Platform
+from homeassistant.helpers.entity import EntityCategory
 
 COORDINATOR = "coordinator"
 DOMAIN = "trutankless"
@@ -53,6 +54,7 @@ SENSORS = (
         native_unit_of_measurement=ATTR_VOLTAGE,
         state_class=SensorStateClass.MEASUREMENT,
         device_class=SensorDeviceClass.VOLTAGE,
+        entity_category=EntityCategory.DIAGNOSTIC,
     ),
     SensorEntityDescription(
         key="pcb_temp",
@@ -60,5 +62,6 @@ SENSORS = (
         native_unit_of_measurement=TEMP_CELSIUS,
         state_class=SensorStateClass.MEASUREMENT,
         device_class=SensorDeviceClass.TEMPERATURE,
+        entity_category=EntityCategory.DIAGNOSTIC,
     ),
 )
