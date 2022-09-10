@@ -1,0 +1,13 @@
+{
+  "domain": "trutankless",
+  "name": "TruTankless",
+  "config_flow": true,
+  "documentation": "https://github.com/colemamd/hass-trutankless",
+  "requirements": ["pytrutankless==0.1.2"],
+  "ssdp": [],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [],
+  "codeowners": ["@colemamd"],
+  "iot_class": "cloud_poll"
+}
