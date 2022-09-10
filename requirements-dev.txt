@@ -1,4 +1,4 @@
-pytrutankless==0.1.2
+pytrutankless==0.2.0
 black==22.6.0
 isort==5.10.1
 pre-commit==2.20.0
