@@ -3,6 +3,7 @@
   "name": "TruTankless",
   "config_flow": true,
   "documentation": "https://github.com/colemamd/hass-trutankless",
+  "issue_tracker": "https://github.com/colemamd/hass-trutankless/issues",
   "requirements": ["pytrutankless==0.1.2"],
   "ssdp": [],
   "zeroconf": [],
