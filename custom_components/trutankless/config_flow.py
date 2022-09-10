@@ -14,7 +14,7 @@ from .const import DOMAIN
 
 STEP_USER_DATA_SCHEMA = vol.Schema(
     {
-        vol.Optional(CONF_NAME, default=DOMAIN): str,
+        vol.Optional(CONF_NAME, default=DOMAIN): str,  # type: ignore
         vol.Required(CONF_EMAIL): str,
         vol.Required(CONF_PASSWORD): str,
     }
